@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Привіт</h1>
-</body>
+  </head>
+  <body>
+    <section class="room-type container">
+      <ul class="room-photo-list list">
+        <li class="room-photo">
+          <img
+            srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
+            src="./images/img.jpg"
+            alt="Triple room photo1"
+            loading="lazy"
+          />
+        </li>
+        <li class="room-photo">
+          <img
+            srcset="./images/img2.jpg 1x, ./images/img2@2x.jpg 2x"
+            src="./images/img.jpg"
+            alt="Triple room photo2"
+            loading="lazy"
+          />
+        </li>
+        <li class="room-photo">
+          <img
+            srcset="./images/img3.jpg 1x, ./images/img3@2x.jpg 2x"
+            src="./images/img.jpg"
+            alt="Triple room photo3"
+            loading="lazy"
+          />
+        </li>
+      </ul>
+      <h2 class="room-title">Triple Room</h2>
+      <ul class="room-desc-list list">
+        <li>
+          <p class="room-desc">
+            Escape to our spacious Triple Room, perfect for families or groups.
+            Enjoy comfort with three beds, seating area, stunning views,
+            flat-screen TVs, Wi-Fi, and mini-fridge.
+          </p>
+        </li>
+        <li>
+          <p class="room-desc">
+            Rejuvenate in the en-suite bathroom with plush towels and
+            toiletries. Book now for a memorable stay.
+          </p>
+        </li>
+      </ul>
+
+      <ul class="room-button-list list">
+        <li>
+          <button class="room-button button" type="button">More details</button>
+        </li>
+        <li>
+          <button class="room-button button" type="button">View prices</button>
+        </li>
+      </ul>
+    </section>
+  </body>
 </html>
