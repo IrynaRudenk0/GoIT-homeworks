@@ -67,6 +67,11 @@ body {
     }
 }
 
+.room-type {
+    width: 335px;
+        margin-left: auto;
+            margin-right: auto;
+}
 
 .room-photo-list {
     display: flex;
@@ -76,6 +81,10 @@ body {
     margin-bottom: 32px;
 }
 
+.room-photo-block {
+    display: flex;
+    gap: 20px;
+}
 
 .room-picture {
     display: block;
@@ -104,6 +113,7 @@ body {
 .room-button-list {
     display: flex;
     gap: 14px;
+
 }
 
 .room-button {
@@ -114,19 +124,13 @@ body {
 }
 
 @media screen and (min-width:320px) and (max-width:375px) {
-    .room-picture {
-        min-width: calc((100% - 20px))
+    .room-picture, .room-photo-list {
+        max-width: 100%;
     }
 
     .room-desk-text {
-        width: 100%;
+        max-width: 100%;
     }
-}
-
-@media screen and (min-width:375px) {
-.room-photo-list {
-    width: 335px;
-}
 }
 
 @media screen and (min-width:768px) {
@@ -136,10 +140,18 @@ body {
     width: 704px;
 }
 
-.room-picture {
-    width: calc((100% - 32px)/2)
+.room-type {
+    width: 704px;
 }
 
+/* .room-picture {
+    width: calc((100% - 32px)/2)
+} */
+
+.room-photo-block {
+    flex-direction: column;
+    gap: 32px;
+}
 .room-desc-list {
     flex-direction: row;
     justify-content: center;
@@ -153,10 +165,17 @@ body {
 }
 
 @media screen and (min-width:1440px) {
-.room-photo-list {
-    gap: 32px;
-    margin-bottom: 40px;
+.room-type {
+        width: 1376px;
+    }
+
+    .room-photo-list {
     width: 1376px;
+    align-items: center;
+}
+
+.room-photo-block {
+    flex-direction: row;
     align-items: center;
 }
 
