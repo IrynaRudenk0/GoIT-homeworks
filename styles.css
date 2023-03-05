@@ -86,7 +86,7 @@ body {
     gap: 20px;
 }
 
-.room-picture {
+.room-photo {
     display: block;
     max-width: 100%;
     height: auto;
@@ -110,6 +110,10 @@ body {
     max-width: 335px;
 }
 
+.room-desc-text-four {
+    margin-bottom: 28px;
+}
+
 .room-button-list {
     display: flex;
     gap: 14px;
@@ -117,14 +121,24 @@ body {
 }
 
 .room-button {
-    border: 0.8 solid #121212;
+    border: 0.8px solid #121212;
     border-radius: 32px;
     padding: 18px;
     background-color: transparent;
+    text-transform: uppercase;
+}
+
+.room-button-link {
+    display: block;
+    border: 0.8px solid #121212;
+    border-radius: 32px;
+    padding: 18px;
+    background-color: transparent;
+    text-decoration: none;
 }
 
 @media screen and (min-width:320px) and (max-width:375px) {
-    .room-picture, .room-photo-list {
+    .room-photo, .room-photo-list {
         max-width: 100%;
     }
 
@@ -144,10 +158,6 @@ body {
     width: 704px;
 }
 
-/* .room-picture {
-    width: calc((100% - 32px)/2)
-} */
-
 .room-photo-block {
     flex-direction: column;
     gap: 32px;
@@ -162,6 +172,16 @@ body {
 .room-desc {
     width: 355px;
 }
+
+.room-desc-text-four {
+    width: 476px;
+    margin-bottom: 40px;
+}
+
+.room-button-list-four {
+    justify-content: end;
+}
+
 }
 
 @media screen and (min-width:1440px) {
@@ -186,6 +206,11 @@ body {
 .room-desc-block {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.room-desc-block-four {
+    display: flex;
     justify-content: space-between;
 }
 
